@@ -1,0 +1,8 @@
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/7d/ -maxdepth 1 -type f -mmin +$((60*24*7)) -iregex '^/usr/share/nginx/html/burnafterreading/7d/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/3d/ -maxdepth 1 -type f -mmin +$((60*24*3)) -iregex '^/usr/share/nginx/html/burnafterreading/3d/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/1d/ -maxdepth 1 -type f -mmin +$((60*24)) -iregex '^/usr/share/nginx/html/burnafterreading/1d/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/12h/ -maxdepth 1 -type f -mmin +$((60*12)) -iregex '^/usr/share/nginx/html/burnafterreading/12h/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/4h/ -maxdepth 1 -type f -mmin +$((60*4)) -iregex '^/usr/share/nginx/html/burnafterreading/4h/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/1h/ -maxdepth 1 -type f -mmin +$((60*1)) -iregex '^/usr/share/nginx/html/burnafterreading/1h/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/30m/ -maxdepth 1 -type f -mmin +$((30)) -iregex '^/usr/share/nginx/html/burnafterreading/30m/[a-zA-Z0-9_-]+$' -delete
+*/1 * * * * find /usr/share/nginx/html/burnafterreading/5m/ -maxdepth 1 -type f -mmin +$((5)) -iregex '^/usr/share/nginx/html/burnafterreading/5m/[a-zA-Z0-9_-]+$' -delete
