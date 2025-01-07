@@ -1,0 +1,79 @@
+body {
+    background-color: 181818;
+    color: 878787;
+}
+
+div {
+    text-align: center;
+}
+
+a {
+    color: 878787;
+}
+
+hr {
+    border: 3;
+    color: 878787;
+    opacity: .1;
+    width: 60%;
+}
+
+button {
+    border: none;
+    width: 50%;
+    border-radius: 8px;
+    color: e2e2e2;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table {
+    width: 50%;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+textarea {
+    color: e2e2e2;
+    background-color: 181818;
+    font-size: large;
+    border: 1px solid orange;
+    border-radius: 4px;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 30%;
+}
+
+input {
+    background-color: 181818;
+    color: e2e2e2;
+    font-size: large;
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px 4px;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: 181818;
+    color: 878787;
+    border: 1px solid orange;
+    border-radius: 4px;
+    font-size: medium;
+    font-weight: normal;
+}
+
+@media (max-width:800px) {
+    div, table, button, textarea {
+        width:100%;
+    }
+}

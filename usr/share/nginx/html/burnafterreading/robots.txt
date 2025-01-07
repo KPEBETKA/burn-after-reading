@@ -1,0 +1,4 @@
+Host: https://burnafterreading.kpebetka.net
+User-agent: *
+Allow: /$
+Disallow: /*
