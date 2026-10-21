@@ -1,0 +1,17 @@
+<div id="burn-error-block" class="error-message">
+    <span>Error. The encrypted secret message is not burned. Please try again.</span>
+</div>
+
+<div id="not-exist-block" class="error-page" style="display: none;">
+    <div class="big-icon" aria-hidden="true"><svg class="icon" width="44" height="44"><use href="/static/img/sprite.svg#i-search"></use></svg></div>
+    <h2>This encrypted secret message does not exist</h2>
+    <p>It is likely that it never existed. Maybe someone read it before you. We do not know this.</p>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='/'">Encrypt another secret message</button>
+</div>
+
+<div id="success-burn-block" class="error-page" style="display: none;">
+    <div class="big-icon" aria-hidden="true"><svg class="icon" width="44" height="44"><use href="/static/img/sprite.svg#i-flame"></use></svg></div>
+    <h2>This encrypted secret message is successfully burned</h2>
+    <p>The encrypted secret message has been deleted before it was read. It cannot be recovered.</p>
+    <button class="btn btn-primary" type="button" onclick="window.location.href='/'">Encrypt another secret message</button>
+</div>

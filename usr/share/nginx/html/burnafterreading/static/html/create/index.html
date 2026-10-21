@@ -2,43 +2,37 @@
     <head>
         <meta charset="utf-8">
         <!--# include file="meta.html" -->
-        <meta property='og:url' content='https://burnafterreading.pw'/>
-        <meta property='og:type' content='website'/>
-        <meta property='og:image' content='https://burnafterreading.pw/static/img/logo.png'/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <script src="/static/js/main.js"></script>
         <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     </head>
     <body>
-        <br>
-        <div>
-            <table align="center">
-                <tbody>
-                    <tr>
-                        <td>
-                            <a rel="noreferrer nofollow noopener" href="https://<!--# echo var="host" -->/"><img style="width: 42px; height: 42px;" src="/static/img/logo.png"><img></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span style="font-size: large;">Burn After Reading</span>
-                        </td>
-                        <td style="text-align: right; vertical-align: bottom;">
-                            <a rel="noreferrer nofollow noopener" href="/about" style="font-size: normal;">About</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <!--# include file="body.html" -->
-        <br>
-        <hr>
-        <br>
-    </body>
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+          <defs>
+            <filter id="sketch" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+              <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="5" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="1.2" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
+          </defs>
+        </svg>
 
+        <div class="card">
+            <div class="brand">
+                <div class="brand-name">
+                    <a class="brand-logo-link" rel="noreferrer nofollow noopener" href="https://<!--# echo var="host" -->/">
+                        <svg class="icon" width="28" height="28" aria-hidden="true"><use href="/static/img/sprite.svg#i-flame"></use></svg>
+                    </a>
+                    <span>Burn After Reading</span>
+                </div>
+                <div class="brand-actions">
+                    <a class="badge" href="/about">About</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <!--# include file="body.html" -->
+            </div>
+        </div>
+    </body>
 </html>
